@@ -1,21 +1,24 @@
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  display: flexbox;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
+  background-color: #628ee6;
+  min-height: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,15 +27,62 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+h2 {
+  margin: 16px 0;
+
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.main {
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+footer {
+  background-color: #628ee6;
+  color: white;
+  align-items: center;
+  padding: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 60%;
+  height: calc(100vh - 100px);
+  margin: auto;
+}
+td {
+  font-size: 20px;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+th {
+  font-size: 24px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  background-color: lavender;
+}
+
+input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (max-width: 482px) {
+  table {
+    width: 60%;
+    max-width: 60%;
+    overflow-x: auto;
   }
-  to {
-    transform: rotate(360deg);
+
+  h1 {
+    font-size: 1.2rem;
   }
+  th,td {
+    font-size: 1rem;
+  }
+
+ 
+  
 }
